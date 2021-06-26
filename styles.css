@@ -1,0 +1,63 @@
+:root {
+    --custom-max-width: 1220px;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Courier, monospace;
+}
+
+main {
+    padding: 50px 25px;
+}
+
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* user story 9 */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#image { /* user story 8 */
+    width: 100%;
+    max-width: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px 5px lightgray;
+}
+
+#img-caption {
+    padding: 10px;
+    max-width: calc(var(--custom-max-width) * 75 / 100);
+}
+
+#tribute-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+#tribute-info ul {
+    width: 75%;
+    max-width: calc(var(--custom-max-width) * 75 / 100);
+    /* border: 5px dashed; */
+}
+
+ul li {
+    margin: 10px 0px;
+    line-height: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+time {
+    font-weight: bold;
+}
+
+time::after {
+    content: " - ";
+}
